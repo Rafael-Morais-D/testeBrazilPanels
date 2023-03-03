@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  background: url("./imagens/bg.jpg");
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.logoArea {
+  padding-bottom: 20px;
+}
+
+#primeiraSessao,
+#segundaSessao {
+  background-color: antiquewhite;
+  border: 2px solid #113349;
+  width: 100%;
+  max-width: 320px;
+  border-radius: 1.2rem;
+  padding: 10px;
+}
+
+#segundaSessao {
+  margin-top: 15px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #113349;
+}
+
+#formExterno {
+  text-align: center;
+}
+
+.campoForm {
+  width: 100%;
+}
+
+.campoForm label,
+.campoForm input,
+.campoForm select,
+#botaoForm,
+#botaoEnviarForm {
+  width: 100%;
+  display: block;
+}
+
+.campoForm input,
+.campoForm select,
+#botaoEnviarForm {
+  width: 90%;
+  margin: 5px auto;
+  padding: 5px;
+}
+
+#botaoEnviarForm {
+  background-color: #113349;
+  color: #fff;
+  font-weight: 700;
+  border-color: #113349;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  transition: opacity .5s;
+}
+
+#botaoEnviarForm:hover {
+  opacity: 80%;
+}
+
+.alertaCampoErrado {
+  margin-top: 10px;
+  color: darkred;
+  font-weight: bold;
+}
+
+.alertaCampoErradoOculto {
+  display: none;
+}
+
+.campoErrado {
+  border: 2px solid red;
+}

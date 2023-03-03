@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste Brazil Panels</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="logoArea">
+    <img src="./imagens/logo.png" alt="logo brazil panels">
+  </div>
+  <section id="primeiraSessao">
+    <h1>TESTE DE<br>FORMULÁRIO</h1>
+    <form id="formExterno">
+      <div class="campoForm">
+        <label for="campoNome">Nome</label>
+        <input id="campoNomeInput" class="" name="campoNome" type="text">
+      </div>
+      <div class="campoForm">
+        <label for="campoEmail">E-mail</label>
+        <input id="campoEmailInput" class="" name="campoEmail" type="text">
+      </div>
+      <div class="campoForm">
+        <label for="campoCelular">Celular</label>
+        <input id="campoCelularInput" class="" name="campoCelular" type="text">
+      </div>
+      <div class="campoForm">
+        <label for="campoEstado">Estado</label>
+        <select id="campoEstadoInput" class="" name="campoEstado" type="text">
+          <option selected="selected" value="0" hidden>Selecione o estado</option>
+          <optgroup id="grupoCentroOeste" label="Centro-Oeste"></optgroup>
+          <optgroup id="grupoNordeste" label="Nordeste"></optgroup>
+          <optgroup id="grupoNorte" label="Norte"></optgroup>
+          <optgroup id="grupoSudeste" label="Sudeste"></optgroup>
+          <optgroup id="grupoSul" label="Sul"></optgroup>
+        </select>
+      </div>
+      <div id="alertaCampoErrado" class="alertaCampoErradoOculto">
+        <p>Preencha corretamente os campos com borda vermelha!</p>
+      </div>
+      <div class="botaoForm">
+        <input id="botaoEnviarForm" type="submit" value="Enviar">
+      </div>
+    </form>
+  </section>
+  <section id="segundaSessao">
+    <h2>RESULTADOS<br>OBTIDOS</h2>
+    <p id="nomeObtido"><strong>Nome: </strong><span id="nomeObtidoResposta"></span></p>
+    <p id="emailObtido"><strong>E-mail: </strong><span id="emailObtidoResposta"></span></p>
+    <p id="celularObtido"><strong>Celular: </strong><span id="celularObtidoResposta"></span></p>
+    <p id="estadoObtido"><strong>Estado: </strong><span id="estadoObtidoResposta"></span></p>
+  </section>
+</body>
+<script src="script.js"></script>
+</html>
